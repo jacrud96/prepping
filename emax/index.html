@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam webpage</title>
+	<link rel="stylesheet" type="text/css" href="exam.css">
+	<!-- <script type="text/javascript" src="exam.js"></script> -->
+</head>
+<body>
+	<header>
+		<h1>Jaclyn's Page</h1>
+	</header>
+	<div>
+		<img src="piggy.jpg" alt="image of a pig">
+	</div>
+	<img id="hiddenImg" src="cow.png" width="500" alt="image of a cow">
+	<br>
+	<button type="button" onclick="hideElem()">Hide Cow</button>
+	<button type="button" onclick="showElem()">Show Cow</button>
+	<script>
+		function hideElem() {
+			document.getElementById("hiddenImg").style.visibility = "hidden"; 
+		}
+		function showElem() {
+			document.getElementById("hiddenImg").style.visibility = "visible"; 
+		}
+	</script>
+	<p id="inspo">.......</p>
+	<button onclick="clickMe()">Click for some Monday inspiration</button>
+	<script>
+    function clickMe(){
+        document.getElementById('inspo').innerHTML = 'Everyday is worth smiling';
+    }
+    </script> 
+	<p id="parId">Yesterday was Sunday</p>
+	<script>
+	document.getElementById("parId").innerHTML = "Today is Monday!";
+	</script>
+	
+
+
+</body>
+</html>

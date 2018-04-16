@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+	body {
+		color: blue;
+		font-family: "Courier New";
+	}
+}
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+	body {
+		color: pink;
+		font-family: "Monaco";
+	}
+
+}
